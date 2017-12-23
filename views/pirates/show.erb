@@ -6,10 +6,11 @@
   </head>
   <body>
 
+  <h1>Pirate information</h1>
   <% @pirates.each do |pirate| %>
-  <%= pirate.name %>
-  <%= pirate.weight %>
-  <%= pirate.height %>
+  <p>Name: <%= pirate.name %></p>
+  <p>Weight: <%= pirate.weight %></p>
+  <pg>Height: <%= pirate.height %></p>
   <% end %>
 
 
