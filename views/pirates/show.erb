@@ -6,8 +6,12 @@
   </head>
   <body>
 
-  <%= @pirates %>
-  <%= @ships %>
+  <% @pirates.each do |pirate| %>
+  <%= pirate.name, pirate.weight, pirate.height %>
+  <% end %>
+
+  
+  <% @ships %>
 
   </body>
 </html>
