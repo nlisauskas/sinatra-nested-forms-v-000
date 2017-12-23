@@ -13,8 +13,11 @@
   <pg>Height: <%= pirate.height %></p>
   <% end %>
 
-
-  <% @ships %>
-
+  <h2>Ship Information</h2>
+  <% @ships.each do |ship| %>
+  <p>Name: <%= ship.name %></p>
+  <p>Weight: <%= ship.weight %></p>
+  <pg>Height: <%= ship.height %></p>
+  <% end %>
   </body>
 </html>
