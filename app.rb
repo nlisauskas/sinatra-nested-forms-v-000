@@ -13,6 +13,9 @@ module FormsLab
 
     post '/pirates' do
       @pirate = Pirate.new(params[:pirate_name], params[:pirate_weight], params[:pirate_height])
+
+
+      erb :show
     end
 
   end
